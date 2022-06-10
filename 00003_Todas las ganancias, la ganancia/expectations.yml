@@ -1,0 +1,11 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: DeclaresFunction:gananciaTotal
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: gananciaTotal
+  inspection: UsesForeach
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: DeclaresComputationWithArity1:gananciaTotal

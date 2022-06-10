@@ -1,0 +1,14 @@
+---
+rules:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    these_expectations_failed:
+    - ganancias Not:SourceContains:>
+  then: no hace falta hacer comparaciones dado que se debe retornar una lista con
+    las ganancias (tanto positivas como negativas) de los balances
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    these_expectations_failed:
+    - ganancias Not:SourceContains:<
+  then: no hace falta hacer comparaciones dado que se debe retornar una lista con
+    las ganancias (tanto positivas como negativas) de los balances
